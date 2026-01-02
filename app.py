@@ -10,7 +10,6 @@ from datetime import datetime
 st.set_page_config(page_title="Delhi AI Pollution Tracker", page_icon="🌍", layout="wide")
 
 # --- 2. CONSTANTS ---
-# Use the URL you provided
 DATA_URL = "https://delhipollutiondev9770.blob.core.windows.net/gold/delhi_heatmap.csv"
 
 # --- 3. HELPER: GET DATA FRESHNESS ---
@@ -32,7 +31,6 @@ def get_last_updated():
         return "Unknown"
 
 # --- 4. HEADER & STATUS ---
-# Changed Emoji to Earth 🌍
 st.title("🌍 AI Pollution Tracker: Delhi")
 
 # Display Last Updated Time
